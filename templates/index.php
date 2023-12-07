@@ -11,13 +11,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MovieStar</title>
-    <link rel="short icon" href="<?=$BASE_URL ?> img/moviestar.ico" />
+    <link rel="short icon" href="<?=$BASE_URL ?>img/moviestar.ico" />
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/css/bootstrap.css">
     <!-- FONT-AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS do projeto -->
-    <link rel="stylesheet" href="<?=$BASE_URL ?>CSS/styles.css"> 
+    <link rel="stylesheet" href="<?=$BASE_URL ?>css/styles.css"> 
 </head>
 <body>
 
@@ -28,7 +28,15 @@
                 <img src="<?=$BASE_URL ?>img/logo.svg" alt="MovieStar" id="logo">
                 <span id="moviestar-title">MovieStar</span>
             </a>
-            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <form action="" method="GET" id="search-form" class="form-inline my-2 my-lg-0">
+                <input type="text" name="q" id="search" class="form-control mr-sm-2" type="search" placeholder="Buscar Filmes" aria-label="Search">
+                <button class="btn my-2 my-sm-0" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
         </nav>
 
     </header>
