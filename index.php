@@ -22,7 +22,6 @@
 <body>
 
     <header>
-
         <nav id="main-navbar" class="navbar navbar-expand-lg">
             <a href="<?=$BASE_URL ?>" class="navbar-brand">
                 <img src="<?=$BASE_URL ?>img/logo.svg" alt="MovieStar" id="logo">
@@ -37,11 +36,44 @@
                     <i class="fas fa-search"></i>
                 </button>
             </form>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="<?=$BASE_URL ?>auth.php" class="nav-link">Entrar / Cadastrar</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-
     </header>
-    <h1>Testando MovieStar</h1>
-    <i class="far fa-plus-square"></i>
+    
+    <div id="main-container" class="container-fluid">
+        <h1>Corpo do Site </h1>
+    </div>
+
+    <footer id="footer">
+        <div class="social-container"></div>
+        <ul>
+            <li>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+        </ul>
+        <div id="footer-links-container">
+            <ul>
+                <li><a href="#">Adicionar Filme</a></li>
+                <li><a href="#">Adicionar Crítica</a></li>
+                <li><a href="#">Entrar / Registrar</a></li>
+            </ul>
+        </div>
+        <p>&copy; 2024 Lamppit Technology Solutions</p>
+    </footer>
+
+
     <!-- BOOTSTRAO JS  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/js/bootstrap.js" integrity="sha512-ipBeSMCnlAvS4AEbycy0nTk9KkYr5lUJwFHNvf4IxtV/CDW4qx53mZKUryWtNr6GFaBl11EXyrU6iE3mo6ib2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
